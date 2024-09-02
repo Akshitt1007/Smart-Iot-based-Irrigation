@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR SERVICES</title>
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body header{
+    background-image: url(./image\ copy\ 2.png);
+    height: 100vh;
+    background-position: top;
+}
+
+body header nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    align-items: center;
+}
+
+body header nav .right{
+    display: flex;
+    gap: 32px;
+}
+
+body header nav .right a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body header nav .right select{
+    background-color: rgba(240, 248, 255, 0.821);
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+@keyframes right {
+    to{
+        color: white;
+    }
+}
+
+body header nav .right a:hover{
+    animation: right 0.3s ease-in-out forwards;
+} 
+
+body header .grid{
+    display: grid;
+    grid-template-rows: 3fr 3fr;
+    grid-template-columns: 3fr 3fr;
+    margin: 100px 220px; 
+}
+
+body header .grid .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 70px;
+    background-color: rgba(240, 248, 255, 0.525);
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+} 
+nav .right select:hover {
+            background-color: rgba(240, 248, 255, 0.9);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 50px 220px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 70px;
+            background-color: rgba(0, 123, 255, 0.8);
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .box:hover {
+            background-color: rgba(0, 123, 255, 1);
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .box a {
+            color: white;
+            text-decoration: none;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="image-8.webp" alt="लोगो">
+            <div class="right">
+                <a href="indexhindi.html">होम</a>
+                <a href="http://127.0.0.1:5500/irrigation%20system/Irriagtion%20system/Irriagtion%20system/ICSCSmartIrrigationforGreenAreasinUrbanZones.pdf">केस स्टडीज</a>
+                <a href="indexhindi.html#end">संपर्क करें</a>
+                <select name="language" onchange="window.location.href=this.value;">
+                    <option value="./index1.html">English</option>
+                    <option value="./index1hindi.html">हिन्दी</option>
+                </select>
+            </div>
+        </nav>
+
+        <div class="grid">
+            <div class="box"><a href="https://zoom.earth/places/india/chandigarh/"> मौसम</a></div>
+            <div class="box"><a href="https://www.acurite.com/blog/soil-moisture-guide-for-plants-and-vegetables.html#:~:text=It%20is%20important%20to%20note,between%2041%25%20%2D%2080%25.">मिट्टी की नमी</a></div>
+            <div class="box"><a href="https://www.rivulis.com/exploring-different-types-of-irrigation-and-their-applications/">उपयुक्त सिंचाई</a></div>
+            <div class="box"><a href="https://cgwb.gov.in/ground-water-level-monitoring">जल की आवश्यकता</a></div>
+        </div>
+
+    </header>
+</body>
+</html>
